@@ -52,3 +52,21 @@ h1, h2, .font-serif {
 #backToTop:active {
     transform: scale(0.9);
 }
+
+.sticky {
+    transition: box-shadow 0.3s ease;
+}
+
+
+.sticky.top-\[64px\] {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;    
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;        
+}
