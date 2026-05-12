@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:italic,wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+h1, h2, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+
+.transition-all {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    display: none;
+}
+
+#product-grid {
+    animation: fadeInGrid 1s ease-out;
+}
+
+@keyframes fadeInGrid {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cat-btn {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.cat-btn:hover {
+    color: #4A3728;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #1C1917;
+    transform: scale(1.1);
+}
+
+#backToTop:active {
+    transform: scale(0.9);
+}
